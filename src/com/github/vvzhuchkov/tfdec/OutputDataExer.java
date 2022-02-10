@@ -1,6 +1,6 @@
 package com.github.vvzhuchkov.tfdec;
 
-public class OutputData {
+public class OutputDataExer {
 
     public static void outputSumOfFourDigitsNumber(int number, String answer) {
         System.out.println("Заданное четырехзначное число - " + number);

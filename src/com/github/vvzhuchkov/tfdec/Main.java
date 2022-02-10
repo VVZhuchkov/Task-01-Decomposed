@@ -2,15 +2,15 @@ package com.github.vvzhuchkov.tfdec;
 
 public class Main {
     public static void main(String[] args) {
-        int number = InputData.checkFourDigitsNumber();
-        String answer = Logic.checkSumDigits(number);
-        OutputData.outputSumOfFourDigitsNumber(number, answer);
+        int number = InputDataExer.checkFourDigitsNumber();
+        String answer = LogicExer.checkSumDigits(number);
+        OutputDataExer.outputSumOfFourDigitsNumber(number, answer);
 
-        int sumMinMax = Logic.sumMinMax();
-        OutputData.outputSumMinMax(sumMinMax);
+        int sumMinMax = LogicExer.sumMinMax();
+        OutputDataExer.outputSumMinMax(sumMinMax);
 
-        int size = InputData.checkSizeMatrix();
-        int[][] matrix = Logic.constructMatrix(size);
-        OutputData.outputMatrix(size, matrix);
+        int size = InputDataExer.checkSizeMatrix();
+        int[][] matrix = LogicExer.constructMatrix(size);
+        OutputDataExer.outputMatrix(size, matrix);
     }
 }

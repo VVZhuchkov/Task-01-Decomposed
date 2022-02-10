@@ -2,7 +2,7 @@ package com.github.vvzhuchkov.tfdec;
 
 import java.util.Scanner;
 
-public class InputData {
+public class InputDataExer {
 
     public static int getInputNumber() {
         int number;
@@ -28,7 +28,7 @@ public class InputData {
 
     public static int checkSizeMatrix() {
         System.out.print("Введите размер стороны равносторонней двумерной матрицы (четное положительное число): ");
-        int size = InputData.getInputNumber();
+        int size = InputDataExer.getInputNumber();
         while (size % 2 != 0 || size <= 0) {
             System.out.println("Необходимо ввести четное положительное число! Попробуйте снова.");
             System.out.print("Введите размер стороны равносторонней двумерной матрицы (четное положительное число): ");

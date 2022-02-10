@@ -1,6 +1,6 @@
 package com.github.vvzhuchkov.tfdec;
 
-public class Logic {
+public class LogicExer {
 
     public static String checkSumDigits(int number) {
         int first = number / 1000;
@@ -17,11 +17,11 @@ public class Logic {
 
     public static int sumMinMax() {
         System.out.print("Введите первое число = ");
-        int first = InputData.getInputNumber();
+        int first = InputDataExer.getInputNumber();
         System.out.print("Введите второе число = ");
-        int second = InputData.getInputNumber();
+        int second = InputDataExer.getInputNumber();
         System.out.print("Введите третье число = ");
-        int third = InputData.getInputNumber();
+        int third = InputDataExer.getInputNumber();
         int sum;
         int[] mass = new int[]{first, second, third};
         int min = first;
