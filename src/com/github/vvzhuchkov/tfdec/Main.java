@@ -1,4 +1,4 @@
-package com.github.vvzhuchkov;
+package com.github.vvzhuchkov.tfdec;
 
 public class Main {
     public static void main(String[] args) {

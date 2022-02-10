@@ -1,4 +1,4 @@
-package com.github.vvzhuchkov;
+package com.github.vvzhuchkov.tfdec;
 
 import java.util.Scanner;
 
