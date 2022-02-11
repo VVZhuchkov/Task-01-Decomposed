@@ -3,10 +3,11 @@ package com.github.vvzhuchkov.tfdec;
 public class Main {
     public static void main(String[] args) {
         int number = InputDataExer.checkFourDigitsNumber();
-        String answer = LogicExer.checkSumDigits(number);
+        boolean answer = LogicExer.checkSumDigits(number);
         OutputDataExer.outputSumOfFourDigitsNumber(number, answer);
 
-        int sumMinMax = LogicExer.sumMinMax();
+        int[] mass = InputDataExer.threeParams();
+        int sumMinMax = LogicExer.sumMinMax(mass);
         OutputDataExer.outputSumMinMax(sumMinMax);
 
         int size = InputDataExer.checkSizeMatrix();

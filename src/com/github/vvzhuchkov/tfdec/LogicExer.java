@@ -2,30 +2,19 @@ package com.github.vvzhuchkov.tfdec;
 
 public class LogicExer {
 
-    public static String checkSumDigits(int number) {
+    public static boolean checkSumDigits(int number) {
         int first = number / 1000;
         int second = number / 100 % 10;
         int third = number % 100 / 10;
         int fourth = number % 1000 % 100 % 10;
         boolean checkAnswer = (first + second) == (third + fourth);
-        return getRuAnswer(checkAnswer);
+        return checkAnswer;
     }
 
-    public static String getRuAnswer(boolean answer) {
-        return (answer ? "Равна" : "Не равна");
-    }
-
-    public static int sumMinMax() {
-        System.out.print("Введите первое число = ");
-        int first = InputDataExer.getInputNumber();
-        System.out.print("Введите второе число = ");
-        int second = InputDataExer.getInputNumber();
-        System.out.print("Введите третье число = ");
-        int third = InputDataExer.getInputNumber();
+    public static int sumMinMax(int[] mass) {
         int sum;
-        int[] mass = new int[]{first, second, third};
-        int min = first;
-        int max = first;
+        int min = mass[0];
+        int max = mass[0];
         for (int j : mass) {
             if (j < min) {
                 min = j;
