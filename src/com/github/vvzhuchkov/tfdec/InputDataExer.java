@@ -6,6 +6,7 @@ public class InputDataExer {
 
     public static int getInputNumber() {
         int number;
+        @SuppressWarnings("resourse")
         Scanner scanner = new Scanner(System.in);
         while (!scanner.hasNextInt()) {
             System.out.println("Incorrect input! Try again.");
